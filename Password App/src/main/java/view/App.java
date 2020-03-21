@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 //merged
@@ -41,6 +42,7 @@ public class App extends Application{
 	    primaryStage.setTitle("Password");
 	    primaryStage.setScene(scene);
 	    primaryStage.setResizable(true);
+	    primaryStage.getIcons().add(0,new Image(getClass().getResourceAsStream("/view/goldenKey.png")));
 	    primaryStage.show();
 	}
 	
