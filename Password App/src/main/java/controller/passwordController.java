@@ -49,14 +49,6 @@ public class passwordController {
 
 	@FXML
 	protected void validate(ActionEvent event) {
-//		if(!password.getText().equals("hello")) {
-//			Shaker shaker = new Shaker(password);
-//			password.setStyle(validationError);
-//			shaker.shake();			
-//		}
-//		else {
-//			password.setStyle(normal);
-//		}
 		try {
 
 			Class.forName("com.mysql.jdbc.Driver");
@@ -75,13 +67,14 @@ public class passwordController {
 					break;
 				}
 				else if(name.equals(username.getText())) {
-//					System.out.println("Wront password");
+					System.out.println("Wront password");
 					Shaker shaker = new Shaker(password);
 					password.setStyle(validationError);
 					shaker.shake();
 				}
 				else if(pw.equals(password.getText())) {
 					System.out.println("Wrong username");
+					//comment
 					Shaker shaker = new Shaker(username);
 					username.setStyle(validationError);
 					shaker.shake();
@@ -104,18 +97,4 @@ public class passwordController {
 
 		}
 	}
-
-//	@FXML
-//	protected void validateEnter(KeyEvent event) {
-//		if(event.getCode().equals(KeyCode.ENTER)) {
-//			System.out.println("Hello");
-//		}
-//		if(password.getText().equals("Redrooster05")) {
-//			System.out.println("valid");
-//		}
-//		else {
-//			password.requestFocus();
-//			System.out.println("Invalid");
-//		}
-//	}
 }
