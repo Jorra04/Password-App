@@ -31,6 +31,7 @@ public class passwordStrength {
 		enter.setStyle(cssProps);
 		Tooltip.install(enter, tooltip);
 	}
+	//comment
 
 	@FXML
 	protected void checker(ActionEvent event) {
