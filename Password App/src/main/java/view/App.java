@@ -32,7 +32,7 @@ public class App extends Application{
 		Parent root2 = FXMLLoader.load(getClass().getResource("/view/passwordStrength.fxml"));
 		Parent root3 = FXMLLoader.load(getClass().getResource("/view/createNewUser.fxml"));
 		   
-	    scene = new Scene(root, 460, 300);
+	    scene = new Scene(root, 340, 320);
 	    secondaryScene = new Scene(root2,460,300);
 	    newUser = new Scene(root3,370,390);
 	    
